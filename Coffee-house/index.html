@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coffee House — авторский кофе, свежая выпечка и уютная атмосфера.">
+    <title>Coffee House — кофе с характером</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a class="logo" href="#home" aria-label="Coffee House, на главную">
+                <span class="logo-mark" aria-hidden="true">CH</span>
+                <span>Coffee House</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-navigation">
+                <span></span>
+            </button>
+
+            <nav class="nav-links" id="main-navigation" aria-label="Основная навигация">
+                <a href="#menu">Меню</a>
+                <a href="#advantages">О нас</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <p class="eyebrow">Кофейня в самом сердце города</p>
+                <h1>Кофе,<br><em>который хочется</em><br>вспоминать</h1>
+                <p class="hero-copy">Свежая обжарка, бережно приготовленные напитки и спокойная атмосфера для лучших моментов дня.</p>
+                <a class="button button-primary" href="#menu">Посмотреть меню</a>
+            </div>
+
+            <div class="hero-details" aria-label="Информация о кофейне">
+                <div class="hero-detail">
+                    <strong>Ежедневно</strong>
+                    <span>с 8:00 до 22:00</span>
+                </div>
+                <div class="hero-detail">
+                    <strong>Центр города</strong>
+                    <span>ул. Тихая, 12</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section menu-section" id="menu">
+            <div class="container">
+                <div class="menu-heading">
+                    <div>
+                        <p class="eyebrow">Наше меню</p>
+                        <h2 class="section-title">Любимые напитки</h2>
+                    </div>
+                </div>
+
+                <div class="menu-list">
+                    <article class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=240&q=80" alt="Кофе эспрессо в чашке">
+                        <div>
+                            <h3>Эспрессо</h3>
+                            <p>Насыщенный и сбалансированный</p>
+                        </div>
+                        <span class="price">180 ₽</span>
+                    </article>
+
+                    <article class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=240&q=80" alt="Капучино">
+                        <div>
+                            <h3>Капучино</h3>
+                            <p>Эспрессо, молоко и нежная пена</p>
+                        </div>
+                        <span class="price">260 ₽</span>
+                    </article>
+
+                    <article class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=240&q=80" alt="Латте">
+                        <div>
+                            <h3>Латте</h3>
+                            <p>Мягкий вкус и бархатная текстура</p>
+                        </div>
+                        <span class="price">280 ₽</span>
+                    </article>
+
+                    <article class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=240&q=80" alt="Флэт уайт">
+                        <div>
+                            <h3>Флэт уайт</h3>
+                            <p>Двойной эспрессо с микропеной</p>
+                        </div>
+                        <span class="price">290 ₽</span>
+                    </article>
+
+                    <article class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=240&q=80" alt="Американо">
+                        <div>
+                            <h3>Американо</h3>
+                            <p>Эспрессо с добавлением воды</p>
+                        </div>
+                        <span class="price">220 ₽</span>
+                    </article>
+
+                    <article class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=240&q=80" alt="Раф">
+                        <div>
+                            <h3>Карамельный раф</h3>
+                            <p>Сливочный, тёплый и ароматный</p>
+                        </div>
+                        <span class="price">320 ₽</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section features" id="advantages">
+            <div class="container feature-grid">
+                <div class="feature-image" role="img" aria-label="Бариста готовит кофе"></div>
+
+                <div>
+                    <p class="eyebrow">Почему мы</p>
+                    <h2 class="section-title">О кофе с заботой</h2>
+
+                    <div class="feature-list">
+                        <article class="feature">
+                            <span class="feature-number">01</span>
+                            <div>
+                                <h3>Свежая обжарка</h3>
+                                <p>Зёрна для нашей кофейни обжариваются специально для раскрытия яркого вкуса.</p>
+                            </div>
+                        </article>
+
+                        <article class="feature">
+                            <span class="feature-number">02</span>
+                            <div>
+                                <h3>Опытные бариста</h3>
+                                <p>Команда знает каждый сорт и готовит напиток с вниманием к деталям.</p>
+                            </div>
+                        </article>
+
+                        <article class="feature">
+                            <span class="feature-number">03</span>
+                            <div>
+                                <h3>Уютное пространство</h3>
+                                <p>Мягкий свет, спокойная музыка и удобные места для встреч и работы.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contacts">
+            <div class="container contact-grid">
+                <div>
+                    <p class="eyebrow">Контакты</p>
+                    <h2>Загляните на чашечку</h2>
+
+                    <div class="contact-info">
+                        <div>
+                            <span>Адрес</span>
+                            <strong>ул. Тихая, 12</strong>
+                        </div>
+                        <div>
+                            <span>График</span>
+                            <strong>Ежедневно с 8:00 до 22:00</strong>
+                        </div>
+                        <div>
+                            <span>Телефон</span>
+                            <strong><a href="tel:+76767676767">+7 (676) 767-67-67</a></strong>
+                        </div>
+                        <div>
+                            <span>Email</span>
+                            <strong><a href="mailto:hello@coffeehouse.ru">hello@coffeehouse.ru</a></strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <p>Есть вопрос или хотите заказать кофе на мероприятие?</p>
+                    <a class="button" href="tel:+76767676767">Позвонить нам</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-row">
+            <span>© 2026 Coffee House</span>
+            <span>С любовью к хорошему кофе</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
