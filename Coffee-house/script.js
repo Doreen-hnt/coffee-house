@@ -33,3 +33,24 @@ const menuToggle = document.querySelector(".menu-toggle");
                 closeMenu();
             }
         });
+
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const motionElements = document.querySelectorAll(
+            ".menu-heading, .menu-item, .feature-image, .feature, .contact-grid > div, footer"
+        );
+
+        if (!prefersReducedMotion && "IntersectionObserver" in window) {
+            document.documentElement.classList.add("js-motion");
+            motionElements.forEach((element) => element.classList.add("reveal"));
+
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    entry.target.classList.toggle("is-visible", entry.isIntersecting);
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: "0px 0px -40px 0px"
+            });
+
+            motionElements.forEach((element) => revealObserver.observe(element));
+        }
